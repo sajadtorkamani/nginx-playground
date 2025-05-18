@@ -6,6 +6,7 @@ FROM php:${PHP_VERSION}-fpm
 # Install Nginx and system dependencies
 RUN apt-get update && apt-get install -y \
     git \
+    libzip-dev \
     lsof \
     man \
     procps \
@@ -13,6 +14,12 @@ RUN apt-get update && apt-get install -y \
     sudo \
     supervisor \
     vim
+
+# Install PHP extensions
+RUN docker-php-ext-install \
+    mysqli \
+    pdo_mysql \
+    zip
 
 # Copy the default nginx.conf provided by the base image just for reference
 RUN cp /etc/nginx/nginx.conf /etc/nginx/nginx.conf.orig

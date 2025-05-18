@@ -1,7 +1,7 @@
 ## Setup
 
 ```shell
-cd 2-plain-php && \
+cd 4-wordpress-php && \
 docker compose up -d --build && \
 docker compose exec nginx /bin/bash
 ```
