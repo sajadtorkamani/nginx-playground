@@ -3,6 +3,8 @@ body {
 }
 
 img {
-  width: 400px;
+  display: block;
+  margin-bottom: 30px;
   max-width: 100%;
+  width: 400px;
 }
