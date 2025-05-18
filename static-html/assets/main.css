@@ -1,3 +1,8 @@
 body {
-  background: lightgreen;
+  background: lightcyan;
+}
+
+img {
+  width: 400px;
+  max-width: 100%;
 }
