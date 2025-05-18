@@ -1,7 +1,7 @@
 ## Setup
 
 ```shell
-cd 3-symfony-php && \
+cd 2-plain-php && \
 docker compose up -d --build && \
 docker compose exec nginx /bin/bash
 ```
