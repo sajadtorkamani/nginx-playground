@@ -1,5 +1,5 @@
 services:
-    plain-php:
+    nginx:
         build:
             context: .
             dockerfile: Dockerfile
